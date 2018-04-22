@@ -7,15 +7,15 @@ class Dog
     self.@@all<<name
   end
 
-  def clear_all
-    self.@@all=[]
+  def self.clear_all
+    @@all=[]
   end
 
-  def all
-    self.@all.each do |name|
+  def self.all
+    @@all.each do |name|
       puts name
     end
   end
 
-  
+
 end
